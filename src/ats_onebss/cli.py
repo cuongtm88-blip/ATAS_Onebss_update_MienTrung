@@ -326,7 +326,12 @@ async def collect_plan(
             else:
                 rule = match_rule(rules, ticket)
                 voice_mode = voice_brandname_mode(rule, ticket)
-                if voice_mode or not rule.write_to_sheet:
+                if not rule.count_points and not rule.write_to_sheet:
+                    raise RuleError(
+                        "Dịch vụ đặc biệt cần được chỉ định người nhận ở mục "
+                        "phiếu chưa giao."
+                    )
+                if voice_mode:
                     eligible_members(
                         rule, ticket, config.use_backup_members,
                         excluded_members,
