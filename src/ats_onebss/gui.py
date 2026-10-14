@@ -144,6 +144,7 @@ def prepare_runtime_root() -> Path:
 
     target = user_data_root()
     target.mkdir(parents=True, exist_ok=True)
+    refreshable_defaults = {"regions/central/project_rules.toml"}
     for relative in RESOURCE_FILES:
         source_file = source / relative
         if not source_file.exists():
@@ -156,7 +157,15 @@ def prepare_runtime_root() -> Path:
             except (FileNotFoundError, StopIteration):
                 pass
         target_file = target / relative
-        if source_file.exists() and not target_file.exists():
+        should_copy = source_file.exists() and not target_file.exists()
+        if (
+            source_file.exists()
+            and target_file.exists()
+            and relative in refreshable_defaults
+            and source_file.stat().st_mtime_ns > target_file.stat().st_mtime_ns
+        ):
+            should_copy = True
+        if should_copy:
             target_file.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source_file, target_file)
     # In the development layout the editable file is next to ``dist`` while
