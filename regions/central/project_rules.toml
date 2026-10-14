@@ -129,7 +129,7 @@ locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]
 
 [[projects]]
 name = "Tên miền Quốc tế Miền Trung"
@@ -144,4 +144,4 @@ locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]
