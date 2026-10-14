@@ -14,4 +14,4 @@ Trên Windows, cài `uv` rồi chạy:
 
 Gói được tạo trong `dist/ATS-OneBSS`. Các tag `v*` tạo Windows release tự động.
 
-Hai dịch vụ `Thoại quốc tế` và `Sponsored Roaming` được cân bằng giữa năm nhân sự theo tải hiện tại; phiếu không cộng điểm và không ghi vào Google Sheet theo quy tắc trong workbook.
+Hai dịch vụ `Thoại quốc tế` và `Sponsored Roaming` không cộng điểm, không ghi vào Google Sheet theo quy tắc trong workbook; người vận hành chỉ định người nhận tại mục phiếu chưa giao.
