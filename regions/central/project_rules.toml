@@ -125,11 +125,11 @@ route_field = "labor_province"
 
 [[projects.routes]]
 assignee = "Nguyễn Thị Quỳnh Mai"
-locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"]
+locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DNO"]
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
 
 [[projects]]
 name = "Tên miền Quốc tế Miền Trung"
@@ -140,8 +140,8 @@ route_field = "labor_province"
 
 [[projects.routes]]
 assignee = "Nguyễn Thị Quỳnh Mai"
-locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"]
+locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DNO"]
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
