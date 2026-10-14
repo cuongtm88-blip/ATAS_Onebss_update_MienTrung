@@ -1,0 +1,147 @@
+# Quy tắc ưu tiên riêng của Miền Trung.
+
+[[projects]]
+name = "SIP thanh lý"
+priority = 120
+match_fields = ["service", "service_type"]
+contains = ["SIP", "ISDN 30B+D cáp đồng", "ISDN 30B+D cáp quang"]
+required_contains = { installation_type = "Thanh lý" }
+fixed_assignee = "Lê Thị Kim Tuyến"
+
+[[projects]]
+name = "SIP"
+priority = 110
+match_fields = ["service", "service_type"]
+contains = ["SIP", "ISDN 30B+D cáp đồng", "ISDN 30B+D cáp quang"]
+fixed_assignee = "Phạm Văn Lanh"
+
+[[projects]]
+name = "Nhóm dịch vụ thanh lý"
+priority = 105
+match_fields = ["service", "service_type"]
+contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
+required_contains = { installation_type = "Thanh lý" }
+fixed_assignee = "Lưu Trần Sơn Tú"
+
+[[projects]]
+name = "Internet trực tiếp thay đổi thông số"
+priority = 104
+match_fields = ["service", "service_type"]
+contains = "Internet trực tiếp"
+required_contains = { installation_type = "Thay đổi thông số", service_type = "Internet trực tiếp" }
+fixed_assignee = "Lưu Trần Sơn Tú"
+
+[[projects]]
+name = "Phiếu tại tỉnh - Khách hàng Doanh nghiệp"
+priority = 104
+match_fields = ["service", "service_type"]
+contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
+required_contains = { delivery_unit = ["Trung tâm Khách hàng Doanh nghiệp", "Phieu tai tinh"] }
+fixed_assignee = "Lê Thị Kim Tuyến"
+
+[[projects]]
+name = "Đơn vị GOV Trung ương"
+priority = 103
+match_fields = ["service", "service_type"]
+contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
+required_contains = { delivery_unit = "Trung tâm khách hàng GOV Trung ương - Ban khách hàng Tổ chức - Doanh nghiệp" }
+fixed_assignee = "Nguyễn Thị Quỳnh Mai"
+
+[[projects]]
+name = "Đơn vị Khách hàng Doanh nghiệp Miền Nam"
+priority = 103
+match_fields = ["service", "service_type"]
+contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
+required_contains = { delivery_unit = "Trung tâm Khách hàng Doanh nghiệp Miền Nam" }
+fixed_assignee = "Nguyễn Thị Quỳnh Mai"
+
+[[projects]]
+name = "Hợp đồng quản lý tại TP Hồ Chí Minh"
+priority = 102
+match_fields = ["service", "service_type"]
+contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
+required_contains = { management_province = "Hồ Chí Minh" }
+fixed_assignee = "Nguyễn Thị Quỳnh Mai"
+
+[[projects]]
+name = "Hợp đồng quản lý tại Hà Nội"
+priority = 102
+match_fields = ["service", "service_type"]
+contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
+required_contains = { management_province = "Hà Nội" }
+fixed_assignee = "Lê Thị Kim Tuyến"
+
+[[projects]]
+name = "Tên miền Việt Nam xử lý gia hạn"
+priority = 120
+match_fields = ["service", "service_type"]
+contains = "Tên Miền Việt Nam"
+required_contains = { installation_type = "Gia hạn và thay đổi gói cước CNTT/GTGT" }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+fixed_assignee = "Lưu Trần Sơn Tú"
+
+[[projects]]
+name = "Tên miền Việt Nam xử lý gia hạn dịch vụ"
+priority = 120
+match_fields = ["service", "service_type"]
+contains = "Tên Miền Việt Nam"
+required_contains = { installation_type = "Gia hạn dịch vụ CNTT/GTGT" }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+fixed_assignee = "Lưu Trần Sơn Tú"
+
+[[projects]]
+name = "Tên miền Việt Nam chấm dứt"
+priority = 120
+match_fields = ["service", "service_type"]
+contains = "Tên Miền Việt Nam"
+required_contains = { installation_type = "Chấm dứt sử dụng" }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+fixed_assignee = "Lưu Trần Sơn Tú"
+
+[[projects]]
+name = "Tên miền Việt Nam thanh lý qua Vip"
+priority = 120
+match_fields = ["service", "service_type"]
+contains = "Tên Miền Việt Nam"
+required_contains = { installation_type = "Thanh lý dịch vụ CNTT/GTGT - qua Vip" }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+fixed_assignee = "Lưu Trần Sơn Tú"
+
+[[projects]]
+name = "Tên miền Việt Nam thanh lý"
+priority = 120
+match_fields = ["service", "service_type"]
+contains = "Tên Miền Việt Nam"
+required_contains = { installation_type = "Thanh lý DV CNTT" }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+fixed_assignee = "Lưu Trần Sơn Tú"
+
+[[projects]]
+name = "Tên miền Việt Nam Miền Trung"
+priority = 100
+match_fields = ["service", "service_type"]
+contains = "Tên Miền Việt Nam"
+route_field = "labor_province"
+
+[[projects.routes]]
+assignee = "Nguyễn Thị Quỳnh Mai"
+locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"]
+
+[[projects.routes]]
+assignee = "Trương Thị Diễm Trâm"
+locations = ["TP.HCM", "Hồ Chí Minh", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]
+
+[[projects]]
+name = "Tên miền Quốc tế Miền Trung"
+priority = 100
+match_fields = ["service", "service_type"]
+contains = "Tên Miền Quốc Tế"
+route_field = "labor_province"
+
+[[projects.routes]]
+assignee = "Nguyễn Thị Quỳnh Mai"
+locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"]
+
+[[projects.routes]]
+assignee = "Trương Thị Diễm Trâm"
+locations = ["TP.HCM", "Hồ Chí Minh", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau"]

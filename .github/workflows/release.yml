@@ -1,0 +1,37 @@
+name: Release ATS OneBSS Miền Trung for Windows
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Validate Central rules
+        shell: pwsh
+        run: |
+          uv sync --extra packaging
+          uv run python -c "from pathlib import Path; from ats_onebss.config import load_config; from ats_onebss.rules import load_rules, load_project_rules; c=load_config(Path('regions/central/config.toml')); print(f'{len(load_rules(c.rules_file))} service rules, {len(load_project_rules(c.project_rules_file))} project rules')"
+      - name: Build Windows app
+        shell: pwsh
+        run: ./scripts/build_app.ps1
+      - name: Package app
+        shell: pwsh
+        run: |
+          $version = uv run python -c "from ats_onebss import __version__; print(__version__)"
+          Compress-Archive -Path "dist/ATS-OneBSS" -DestinationPath "dist/ATS-OneBSS-Windows-x64-$version.zip"
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/ATS-OneBSS-Windows-x64-*.zip
+          body: |
+            ATS OneBSS Miền Trung dành cho Windows x64.
+
+            Giải nén và chạy ATS-OneBSS.exe. Cấu hình, workbook và dữ liệu giao phiếu thuộc riêng miền Trung.

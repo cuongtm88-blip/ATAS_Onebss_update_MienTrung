@@ -1,0 +1,10 @@
+version = 1
+default_region = "central"
+
+[regions.central]
+name = "Miền Trung"
+enabled = true
+config = "regions/central/config.toml"
+description = "Bản Windows độc lập với quy tắc và dữ liệu Miền Trung."
+update_repository = "cuongtm88-blip/ATAS_Onebss_update_MienTrung"
+platforms = ["windows"]
