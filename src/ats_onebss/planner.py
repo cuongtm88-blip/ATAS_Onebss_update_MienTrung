@@ -31,6 +31,7 @@ def plan_assignments(
     cohort_conflicts: dict[str, str] | None = None,
     manual_assignees: dict[str, str] | None = None,
     service_assignments: dict[str, dict[str, str]] | None = None,
+    force_voice_brandname_rule: bool = False,
 ) -> list[Assignment]:
     scores = {
         normalize(name): Decimal(str(value))
@@ -258,6 +259,12 @@ def plan_assignments(
             project_name = project.project_name if project else ""
             sheet_existing = in_sheet_history and rule.write_to_sheet
             sheet_reassignment = sheet_existing
+        elif force_voice_brandname_rule and voice_mode in {"xu_ly", "giam_sat"}:
+            groups = eligible_members(
+                rule, ticket, use_backups, excluded_names
+            )
+            project_name = ""
+            sheet_existing = in_sheet_history and rule.write_to_sheet
         elif voice_mode == "giam_sat":
             groups = eligible_members(
                 rule, ticket, use_backups, excluded_names
@@ -312,7 +319,9 @@ def plan_assignments(
             # The current matched Excel row defines the staff for this mode.
             # Mark a replay only when its saved assignees are still valid under
             # that same regional rule.
-            if preferred:
+            if force_voice_brandname_rule:
+                sheet_reassignment = sheet_existing
+            elif preferred:
                 current_mode_members = {
                     normalize(member.name) for member in rule.members
                 }

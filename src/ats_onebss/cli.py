@@ -307,7 +307,10 @@ async def collect_plan(
                             )
                         member_group(rules, canonical)
                 else:
-                    if voice_brandname_mode(rule, ticket) == "giam_sat":
+                    mode = voice_brandname_mode(rule, ticket)
+                    if mode == "giam_sat" or (
+                        config.force_voice_brandname_rule and mode
+                    ):
                         # Validate the forced current-state route, not the stale
                         # assignee recorded when the ticket was first handled.
                         eligible_members(
@@ -387,6 +390,7 @@ async def collect_plan(
         cohort_conflicts,
         manual_assignees,
         monthly_service_assignments,
+        config.force_voice_brandname_rule,
     )
     for ticket in valid:
         pinned = cohort_conflicts.get(ticket.key)

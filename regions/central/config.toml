@@ -11,6 +11,7 @@ timeout_ms = 30000
 file = "../../MT/Giao phiếu_MT_v1.xlsx"
 projects_file = "project_rules.toml"
 use_backup_members = true
+force_voice_brandname_rule = true
 
 [google_sheet]
 url = "https://docs.google.com/spreadsheets/d/1sYsbbMC9AYmZwa5t5t1zqQCfbLHZATPwtCJsRYNxkz4/edit?usp=sharing"
