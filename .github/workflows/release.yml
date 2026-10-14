@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - "v*"
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Tag cần phát hành, ví dụ v0.9.56"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -31,6 +37,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: dist/ATS-OneBSS-Windows-x64-*.zip
+          tag_name: ${{ inputs.release_tag || github.ref_name }}
+          name: ATS OneBSS Miền Trung ${{ inputs.release_tag || github.ref_name }}
           body: |
             ATS OneBSS Miền Trung dành cho Windows x64.
 
