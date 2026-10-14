@@ -144,7 +144,12 @@ def prepare_runtime_root() -> Path:
 
     target = user_data_root()
     target.mkdir(parents=True, exist_ok=True)
-    refreshable_defaults = {"regions/central/project_rules.toml"}
+    # Upgrade bundled Central defaults while preserving any newer local edits.
+    refreshable_defaults = {
+        "regions/central/project_rules.toml",
+        "regions/central/config.toml",
+        "MT/Giao phiếu_MT_v1.xlsx",
+    }
     for relative in RESOURCE_FILES:
         source_file = source / relative
         if not source_file.exists():
