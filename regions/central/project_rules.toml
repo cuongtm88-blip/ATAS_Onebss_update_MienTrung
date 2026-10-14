@@ -77,7 +77,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Gia hạn và thay đổi gói cước CNTT/GTGT" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -86,7 +86,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Gia hạn dịch vụ CNTT/GTGT" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -95,7 +95,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Chấm dứt sử dụng" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -104,7 +104,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Thanh lý dịch vụ CNTT/GTGT - qua Vip" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -113,7 +113,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Thanh lý DV CNTT" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
