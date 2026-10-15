@@ -334,6 +334,7 @@ def plan_assignments(
         eligible_count = sum(len(members) for members in groups.values())
         cohort_key = (
             "" if manual_assignee or voice_mode == "giam_sat"
+            or (force_voice_brandname_rule and voice_mode == "xu_ly")
             or uses_percentage_routing(rule) else assignment_cohort_key(
                 ticket.customer_name, ticket.labor_address,
                 ticket.service_type or ticket.service,

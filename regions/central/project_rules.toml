@@ -129,7 +129,7 @@ locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "DNI", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
 
 [[projects]]
 name = "Tên miền Quốc tế Miền Trung"
@@ -144,4 +144,4 @@ locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "DNI", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
