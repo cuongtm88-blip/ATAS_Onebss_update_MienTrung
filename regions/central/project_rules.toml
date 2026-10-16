@@ -77,7 +77,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Gia hạn và thay đổi gói cước CNTT/GTGT" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DLC", "DNO"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNI", "BDH", "PYN", "KHA", "KTM", "GLI", "DLK", "DLC", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -86,7 +86,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Gia hạn dịch vụ CNTT/GTGT" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DLC", "DNO"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNI", "BDH", "PYN", "KHA", "KTM", "GLI", "DLK", "DLC", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -95,7 +95,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Chấm dứt sử dụng" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DLC", "DNO"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNI", "BDH", "PYN", "KHA", "KTM", "GLI", "DLK", "DLC", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -104,7 +104,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Thanh lý dịch vụ CNTT/GTGT - qua Vip" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DLC", "DNO"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNI", "BDH", "PYN", "KHA", "KTM", "GLI", "DLK", "DLC", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -113,7 +113,7 @@ priority = 120
 match_fields = ["service", "service_type"]
 contains = "Tên Miền Việt Nam"
 required_contains = { installation_type = "Thanh lý DV CNTT" }
-required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DLC", "DNO"] }
+required_any_contains = { labor_province = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNI", "BDH", "PYN", "KHA", "KTM", "GLI", "DLK", "DLC", "DNO"] }
 fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
@@ -125,11 +125,11 @@ route_field = "labor_province"
 
 [[projects.routes]]
 assignee = "Nguyễn Thị Quỳnh Mai"
-locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DLC", "DNO"]
+locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNI", "BDH", "PYN", "KHA", "KTM", "GLI", "DLK", "DLC", "DNO"]
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "DNI", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "VTU", "NTN", "BTN", "DNA", "DNI", "LDG", "TNH", "LAN", "CTO", "STG", "HGG", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
 
 [[projects]]
 name = "Tên miền Quốc tế Miền Trung"
@@ -140,8 +140,8 @@ route_field = "labor_province"
 
 [[projects.routes]]
 assignee = "Nguyễn Thị Quỳnh Mai"
-locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNG", "BDI", "PYN", "KHA", "KTU", "GLA", "DLK", "DLC", "DNO"]
+locations = ["Quảng Bình", "Quảng Trị", "Huế", "Thừa Thiên Huế", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hòa", "Kon Tum", "KonTum", "Gia Lai", "Đắk Lắk", "Đắk Nông", "QBH", "QTI", "HUE", "DNG", "QNM", "QNI", "BDH", "PYN", "KHA", "KTM", "GLI", "DLK", "DLC", "DNO"]
 
 [[projects.routes]]
 assignee = "Trương Thị Diễm Trâm"
-locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "BRV", "NTN", "BTN", "DNA", "DNI", "LDO", "TNH", "LAN", "CTO", "STG", "HAU", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
+locations = ["TP.HCM", "Hồ Chí Minh", "HCM", "Bình Dương", "Bà Rịa", "Vũng Tàu", "Ninh Thuận", "Bình Thuận", "Đồng Nai", "Bình Phước", "BPC", "Lâm Đồng", "Tây Ninh", "Long An", "Cần Thơ", "Sóc Trăng", "Hậu Giang", "Tiền Giang", "Đồng Tháp", "Bến Tre", "Trà Vinh", "Vĩnh Long", "An Giang", "Kiên Giang", "Bạc Liêu", "Cà Mau", "BDG", "VTU", "NTN", "BTN", "DNA", "DNI", "LDG", "TNH", "LAN", "CTO", "STG", "HGG", "TGG", "DTP", "BTE", "TVH", "VLG", "AGG", "KGG", "BLU", "CMU"]
