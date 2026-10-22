@@ -33,10 +33,10 @@ fixed_assignee = "Lưu Trần Sơn Tú"
 
 [[projects]]
 name = "Phiếu tại tỉnh - Khách hàng Doanh nghiệp"
-priority = 104
+priority = 103
 match_fields = ["service", "service_type"]
 contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
-required_contains = { delivery_unit = ["Trung tâm Khách hàng Doanh nghiệp", "Phieu tai tinh"] }
+required_any_contains = { delivery_unit = ["Trung tâm Khách hàng Doanh nghiệp", "Phieu tai tinh"] }
 fixed_assignee = "Lê Thị Kim Tuyến"
 
 [[projects]]
@@ -49,7 +49,7 @@ fixed_assignee = "Nguyễn Thị Quỳnh Mai"
 
 [[projects]]
 name = "Đơn vị Khách hàng Doanh nghiệp Miền Nam"
-priority = 103
+priority = 104
 match_fields = ["service", "service_type"]
 contains = ["Fiber", "MegaWan", "MetroNet", "Kênh thuê riêng"]
 required_contains = { delivery_unit = "Trung tâm Khách hàng Doanh nghiệp Miền Nam" }
