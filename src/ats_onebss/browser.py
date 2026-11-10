@@ -1792,15 +1792,36 @@ class OneBSSClient:
                     + self.session.config.timeout_ms / 1000
                 )
                 while asyncio.get_running_loop().time() < deadline:
-                    if await _row_has_selected_task(
-                        employee_rows, assignee, self.session.config.task
-                    ):
-                        return dialog
+                    # Selecting a Vue TreeSelect option can replace the whole
+                    # Syncfusion employee grid. Reacquire the live grid before
+                    # checking whether OneBSS kept the selected task.
+                    try:
+                        current_dialog, current_grid = await _visible_employee_grid(
+                            self.page,
+                            min(1_000, self.session.config.timeout_ms),
+                        )
+                        current_rows = current_grid.locator(
+                            ".e-gridcontent tr.e-row"
+                        )
+                        if await _row_has_selected_task(
+                            current_rows, assignee, self.session.config.task
+                        ):
+                            return current_dialog
+                    except Exception:
+                        # Vue briefly removes and recreates the grid while the
+                        # task selection is applied. Keep polling through that gap.
+                        pass
                     await asyncio.sleep(0.25)
                 raise RuntimeError("Nhiệm vụ chưa xuất hiện trên dòng nhân viên")
             except Exception as error:
                 last_error = error
-                await self.page.keyboard.press("Escape")
+                # Escape closes the entire dialog when the TreeSelect menu is
+                # no longer open, leaving retries without an employee grid.
+                task_portal = self.page.locator(
+                    ".vue-treeselect__portal-target.vue-treeselect--open"
+                )
+                if await task_portal.count() and await task_portal.first.is_visible():
+                    await self.page.keyboard.press("Escape")
                 await self.page.wait_for_timeout(500)
         raise AssignmentPopupError(
             f"Không chọn được nhiệm vụ cho {assignee} sau 3 lần thử: {last_error}"
@@ -2118,11 +2139,27 @@ class OneBSSClient:
                         + self.session.config.timeout_ms / 1000
                     )
                     while asyncio.get_running_loop().time() < deadline:
-                        if await _row_has_selected_task(
-                            employee_rows, assignee, self.session.config.task
-                        ):
-                            checkbox_dispatched = True
-                            break
+                        # Selecting a task can replace the employee-grid
+                        # subtree. Verify against the newly rendered grid.
+                        try:
+                            current_dialog, current_grid = await _visible_employee_grid(
+                                self.page,
+                                min(1_000, self.session.config.timeout_ms),
+                            )
+                            current_rows = current_grid.locator(
+                                ".e-gridcontent tr.e-row"
+                            )
+                            if await _row_has_selected_task(
+                                current_rows, assignee, self.session.config.task
+                            ):
+                                dialog = current_dialog
+                                employee_grid = current_grid
+                                employee_rows = current_rows
+                                checkbox_dispatched = True
+                                break
+                        except Exception:
+                            # The grid is briefly absent while OneBSS rerenders.
+                            pass
                         await asyncio.sleep(0.25)
                     else:
                         raise RuntimeError("Nhiệm vụ chưa xuất hiện trên dòng nhân viên")
@@ -2135,7 +2172,14 @@ class OneBSSClient:
                         # OneBSS discards unsaved task state when the row is
                         # rebuilt. Stop rather than silently saving no task.
                         break
-                    await self.page.keyboard.press("Escape")
+                    task_portal = self.page.locator(
+                        ".vue-treeselect__portal-target.vue-treeselect--open"
+                    )
+                    if (
+                        await task_portal.count()
+                        and await task_portal.first.is_visible()
+                    ):
+                        await self.page.keyboard.press("Escape")
                     await self.page.wait_for_timeout(500)
             if last_error is not None:
                 raise AssignmentPopupError(
